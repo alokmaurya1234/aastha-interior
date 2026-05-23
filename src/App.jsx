@@ -1,20 +1,30 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import ProjectDetails from "./pages/ProjectDetails";
-import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:id" element={<ProjectDetails />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="bg-[#1E1410] text-[#F8F5F2] min-h-screen overflow-x-hidden">
+
+      <Navbar />
+
+      <Hero />
+
+      <Services />
+
+      <ProjectsSection />
+
+      <ContactSection />
+
+      <Footer />
+
+      <WhatsAppButton />
+
+    </div>
   );
 }
 
