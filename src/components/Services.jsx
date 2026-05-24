@@ -72,9 +72,7 @@ function Services() {
         {/* Heading */}
         <div className="text-center mb-14 sm:mb-16">
 
-          <p className="uppercase tracking-[4px] sm:tracking-[5px] text-[#D6C2A8] mb-3 text-sm">
-            What We Do
-          </p>
+          
 
           <h2 className="text-4xl sm:text-5xl font-bold text-[#F8F5F2]">
             Our Services
