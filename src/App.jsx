@@ -1,30 +1,30 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import ServiceDetails from "./pages/ServiceDetails";
 
 function App() {
+
   return (
-    <div className="bg-[#1E1410] text-[#F8F5F2] min-h-screen overflow-x-hidden">
 
-      <Navbar />
+    <BrowserRouter>
 
-      <Hero />
+      <Routes>
 
-      <Services />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
-      <ProjectsSection />
+        <Route
+          path="/services/:serviceId"
+          element={<ServiceDetails />}
+        />
 
-      <ContactSection />
+      </Routes>
 
-      <Footer />
+    </BrowserRouter>
 
-      <WhatsAppButton />
-
-    </div>
   );
 }
 

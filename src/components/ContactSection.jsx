@@ -12,12 +12,12 @@ function ContactSection() {
   return (
     <section
       id="contact"
-      className="px-6 sm:px-10 py-24 bg-gradient-to-b from-[#1E1410] to-[#2B1D17]"
+      className="px-6 sm:px-10 py-24 bg-[#1E1410]"
     >
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="max-w-3xl">
 
           <p className="uppercase tracking-[5px] text-[#D6C2A8] mb-3">
             Contact Us
@@ -27,7 +27,7 @@ function ContactSection() {
             Let’s Build Your Dream Interior
           </h2>
 
-          <p className="text-[#C7B299] mt-6 max-w-3xl mx-auto text-lg leading-relaxed">
+          <p className="text-[#C7B299] mt-6 text-lg leading-relaxed">
             Get in touch for premium interior woodwork,
             modular kitchens, wardrobes, TV units,
             and luxury furniture solutions crafted
@@ -37,31 +37,43 @@ function ContactSection() {
         </div>
 
         {/* Contact Card */}
-        <div className="bg-[#241711]/80 backdrop-blur-xl border border-[#3A2A22] rounded-3xl p-8 sm:p-12 shadow-2xl">
+        <div className="mt-14 bg-[#2B1D17] border border-[#4A342A] rounded-[32px] p-8 sm:p-12 shadow-[0_20px_80px_rgba(0,0,0,0.45)]">
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-14 items-center">
 
             {/* Left Side */}
             <div>
 
-              <h3 className="text-3xl font-semibold text-white mb-8">
+              <h3 className="text-3xl font-semibold text-white mb-10">
                 Contact Information
               </h3>
 
-              <div className="space-y-6">
+              <div className="space-y-7">
 
                 {/* Phone */}
                 <a
                   href="tel:+919019474452"
-                  className="flex items-center gap-4 group"
+                  className="flex items-center gap-5 group"
                 >
-                  <div className="bg-[#D6C2A8]/10 p-4 rounded-2xl group-hover:bg-[#D6C2A8] transition">
-                    <FaPhoneAlt className="text-[#D6C2A8] group-hover:text-[#1E1410]" />
+
+                  <div className="w-16 h-16 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center group-hover:bg-[#D6C2A8] transition duration-300">
+
+                    <FaPhoneAlt className="text-[#D6C2A8] group-hover:text-[#1E1410] text-xl" />
+
                   </div>
 
-                  <span className="text-lg text-[#F8F5F2]">
-                    +91 9019474452
-                  </span>
+                  <div>
+
+                    <p className="text-sm uppercase tracking-[2px] text-[#C7B299]">
+                      Phone
+                    </p>
+
+                    <p className="text-xl text-white">
+                      +91 9019474452
+                    </p>
+
+                  </div>
+
                 </a>
 
                 {/* Email */}
@@ -69,27 +81,49 @@ function ContactSection() {
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=aasthainterior@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 group"
+                  className="flex items-center gap-5 group"
                 >
-                  <div className="bg-[#D6C2A8]/10 p-4 rounded-2xl group-hover:bg-[#D6C2A8] transition">
-                    <MdEmail className="text-[#D6C2A8] group-hover:text-[#1E1410] text-xl" />
+
+                  <div className="w-16 h-16 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center group-hover:bg-[#D6C2A8] transition duration-300">
+
+                    <MdEmail className="text-[#D6C2A8] group-hover:text-[#1E1410] text-2xl" />
+
                   </div>
 
-                  <span className="text-lg text-[#F8F5F2] break-all">
-                    aasthainterior@gmail.com
-                  </span>
+                  <div>
+
+                    <p className="text-sm uppercase tracking-[2px] text-[#C7B299]">
+                      Email
+                    </p>
+
+                    <p className="text-xl text-white break-all">
+                      aasthainterior@gmail.com
+                    </p>
+
+                  </div>
+
                 </a>
 
                 {/* Location */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-5">
 
-                  <div className="bg-[#D6C2A8]/10 p-4 rounded-2xl">
-                    <FaMapMarkerAlt className="text-[#D6C2A8]" />
+                  <div className="w-16 h-16 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center">
+
+                    <FaMapMarkerAlt className="text-[#D6C2A8] text-xl" />
+
                   </div>
 
-                  <span className="text-lg text-[#F8F5F2]">
-                    Bangalore, India
-                  </span>
+                  <div>
+
+                    <p className="text-sm uppercase tracking-[2px] text-[#C7B299]">
+                      Location
+                    </p>
+
+                    <p className="text-xl text-white">
+                      Bangalore, India
+                    </p>
+
+                  </div>
 
                 </div>
 
@@ -98,13 +132,13 @@ function ContactSection() {
             </div>
 
             {/* Right Side */}
-            <div className="flex flex-col items-center md:items-start">
+            <div>
 
               <h3 className="text-3xl font-semibold text-white mb-8">
                 Follow Us
               </h3>
 
-              <p className="text-[#C7B299] mb-8 leading-relaxed text-center md:text-left">
+              <p className="text-[#C7B299] mb-10 leading-relaxed text-lg">
                 Explore our latest interior projects,
                 premium woodwork designs, and behind
                 the scenes craftsmanship on social media.
@@ -115,20 +149,20 @@ function ContactSection() {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com/"
+                  href="https://www.instagram.com/aasthainteriorbengaluru_5553/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-14 h-14 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center text-[#D6C2A8] hover:bg-[#D6C2A8] hover:text-[#1E1410] transition duration-300 text-2xl"
+                  className="w-16 h-16 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center text-[#D6C2A8] hover:bg-[#D6C2A8] hover:text-[#1E1410] transition duration-300 text-2xl hover:scale-110"
                 >
                   <FaInstagram />
                 </a>
 
                 {/* YouTube */}
                 <a
-                  href="https://youtube.com/"
+                  href="https://www.youtube.com/@aasthainteriorbengaluru5543"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-14 h-14 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center text-[#D6C2A8] hover:bg-[#D6C2A8] hover:text-[#1E1410] transition duration-300 text-2xl"
+                  className="w-16 h-16 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center text-[#D6C2A8] hover:bg-[#D6C2A8] hover:text-[#1E1410] transition duration-300 text-2xl hover:scale-110"
                 >
                   <FaYoutube />
                 </a>
@@ -138,7 +172,7 @@ function ContactSection() {
                   href="https://wa.me/919019474452"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-14 h-14 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center text-[#D6C2A8] hover:bg-[#D6C2A8] hover:text-[#1E1410] transition duration-300 text-2xl"
+                  className="w-16 h-16 rounded-2xl bg-[#D6C2A8]/10 flex items-center justify-center text-[#D6C2A8] hover:bg-[#D6C2A8] hover:text-[#1E1410] transition duration-300 text-2xl hover:scale-110"
                 >
                   <FaWhatsapp />
                 </a>
