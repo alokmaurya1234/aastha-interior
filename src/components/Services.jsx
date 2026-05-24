@@ -112,7 +112,7 @@ function Services() {
                 {/* Content */}
                 <div className="p-6 sm:p-7">
 
-                  <h3 className="text-2xl font-semibold text-[#F8F5F2]">
+                  <h3 className="text-2xl font-semibold text-[#F8F5F2] h-[72px]">
                     {service.title}
                   </h3>
 
