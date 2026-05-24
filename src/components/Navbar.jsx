@@ -53,7 +53,7 @@ function Navbar() {
           onClick={() => window.scrollTo(0, 0)}
         >
           <h1 className="text-3xl font-bold cursor-pointer">
-            Aastha Interior
+            Interior Veerji
           </h1>
         </Link>
 
