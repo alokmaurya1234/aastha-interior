@@ -1,30 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import ServiceDetails from "./pages/ServiceDetails";
 
 function App() {
-
   return (
+    <Routes>
+      <Route
+        path="/"
+        element={<Home />}
+      />
 
-    <BrowserRouter>
-
-      <Routes>
-
-        <Route
-          path="/"
-          element={<Home />}
-        />
-
-        <Route
-          path="/services/:serviceId"
-          element={<ServiceDetails />}
-        />
-
-      </Routes>
-
-    </BrowserRouter>
-
+      <Route
+        path="/services/:serviceId"
+        element={<ServiceDetails />}
+      />
+    </Routes>
   );
 }
 
