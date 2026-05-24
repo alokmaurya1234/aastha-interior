@@ -6,7 +6,6 @@ import tvUnit from "../assets/services/tv-unit.webp";
 import kitchen from "../assets/services/kitchen.webp";
 import wardrobe from "../assets/services/wardrobe.webp";
 import bedroom from "../assets/services/bedroom.webp";
-import storage from "../assets/services/storage.webp";
 import furniture from "../assets/services/furniture.webp";
 
 function Services() {
@@ -34,12 +33,6 @@ function Services() {
       title: "Bedroom Interiors",
       image: bedroom,
       slug: "bedroom",
-    },
-
-    {
-      title: "Wooden Storage",
-      image: storage,
-      slug: "storage",
     },
 
     {
@@ -90,7 +83,7 @@ function Services() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {services.map((service, index) => (
 

@@ -1,10 +1,16 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function ServiceDetails() {
 
   const { serviceId } = useParams();
 
-  // Auto import all images from catalogue
+  // Scroll to top whenever service changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [serviceId]);
+
+  // Auto import all images from catalogue folders
   const images = import.meta.glob(
     "../assets/catalogue/**/*.{png,jpg,jpeg,webp}",
     {
@@ -29,7 +35,7 @@ function ServiceDetails() {
         <div className="mb-14">
 
           <h1 className="text-5xl font-bold capitalize mb-4">
-            {serviceId.replace("-", " ")}
+            {serviceId.replace(/-/g, " ")}
           </h1>
 
           <p className="text-[#C7B299]">
@@ -51,10 +57,12 @@ function ServiceDetails() {
               <img
                 src={image}
                 alt=""
-                className="w-full h-[350px] object-cover group-hover:scale-110 transition duration-500"
+                loading="lazy"
+                className="w-full h-[350px] object-cover group-hover:scale-105 transition duration-500"
               />
 
             </div>
+
           ))}
 
         </div>
